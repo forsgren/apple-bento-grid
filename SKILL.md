@@ -40,8 +40,25 @@ Generate self-contained HTML files that render Apple-inspired bento card grids. 
 5. **Compose cards** — select card types and fill with the user's content; prioritize density (no empty-feeling cards)
 6. **Ask about logos/images** — if the user has a logo or images, incorporate them (see Logos & Images below)
 7. **Generate the HTML** — produce a single self-contained HTML file
-8. **Offer a vertical version** — after generating a landscape grid, ask: "Want a vertical (portrait) version for social media?" and generate a Template C adaptation if yes
-9. **Screenshot** (optional) — use the Playwright script to capture PNGs at 2x
+8. **Visual review** — open the HTML in a browser and screenshot it to check for issues (see Visual Review below)
+9. **Offer a vertical version** — after generating a landscape grid, ask: "Want a vertical (portrait) version for social media?" and generate a Template C adaptation if yes
+10. **Screenshot** (optional) — use the Playwright script to capture PNGs at 2x
+
+## Visual Review
+
+After generating the HTML, always view the output to catch visual issues before presenting to the user. Use Playwright, browser MCP tools, or `open` to render the file, then check for:
+
+**Orphan lines** — A single pill tag or word wrapping alone to a new row. Fix by removing one pill so the remaining pills fill evenly, or add enough pills to fill two full rows.
+
+**Empty space** — Cards that look sparse with too much whitespace. Fix by adding a subtitle, badge, or extra description text to fill the card.
+
+**Text overflow** — Numbers or labels that are too long for their card width. Fix by reducing font-size or abbreviating (e.g., "$2.4M" not "$2,400,000").
+
+**Broken grid** — Visible row gaps or misaligned cards. Check: no `align-items: start`, gap is exactly 6px, all grid cells are occupied.
+
+**Font fallback** — Text rendering in system fonts instead of Sora/DM Sans. Ensure Google Fonts link is present and page has network access.
+
+If any issues are found, fix the HTML and re-check. Do not present to the user until the output passes visual review.
 
 ## Theme Selection
 
