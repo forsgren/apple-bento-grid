@@ -4,27 +4,33 @@ A skill for AI coding agents that generates Apple-inspired bento grid presentati
 
 > Compatible with [Claude Code](https://claude.com/claude-code), [OpenAI Codex](https://openai.com/index/codex/), [Cursor](https://cursor.sh), and other agents that support the [Agent Skills](https://agentskills.io) standard.
 
-![Apple Bento Grid Showcase](examples/showcase.png)
+## Examples
 
-## Real Examples
-
-These were all created using this skill:
+All made with this skill — just describe your data and get pixel-perfect output.
 
 **Solo Dev Project Stats** — 79 days of building, tracked as product metrics
 
-| Horizontal | Vertical |
-|-----------|----------|
-| ![Project horizontal](examples/real-project-light-horizontal.webp) | ![Project vertical](examples/real-project-light-vertical.webp) |
+![Project horizontal](examples/real-project-light-horizontal.webp)
 
 **Personal Data Dashboard** — 12 years of writing & social media activity
 
-| Horizontal | Vertical |
-|-----------|----------|
-| ![Corpus horizontal](examples/real-corpus-dark-horizontal.jpg) | ![Corpus vertical](examples/real-corpus-dark-vertical.jpg) |
+![Corpus horizontal](examples/real-corpus-dark-horizontal.jpg)
 
-**Chinese New Year Product Launch** — Square format (1200x1200) with festive theme
+**Product Launch** — Light and dark themes
+
+| Light | Dark |
+|-------|------|
+| ![Light](examples/light-horizontal.png) | ![Dark](examples/dark-horizontal.png) |
+
+**Chinese New Year Launch** — Square format (1200x1200) with festive theme
 
 ![CNY 2026](examples/real-cny-2026-square.png)
+
+**Vertical / Social Media** — Portrait format for social posts
+
+| Project Stats | GitHub Social | Personal Dashboard |
+|--------------|--------------|-------------------|
+| ![Project vertical](examples/real-project-light-vertical.webp) | ![Light vertical](examples/light-vertical.png) | ![Corpus vertical](examples/real-corpus-dark-vertical.jpg) |
 
 ## Installation
 
