@@ -2,7 +2,7 @@
 
 A skill for AI coding agents that generates Apple-inspired bento grid presentation cards as self-contained HTML files. No design tools needed — just describe your stats and get pixel-perfect output.
 
-> Compatible with [Claude Code](https://claude.com/claude-code), [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh), and other agents that support the [Agent Skills](https://agentskills.io) standard.
+> Compatible with [Claude Code](https://claude.com/claude-code), [OpenAI Codex](https://openai.com/index/codex/), [Cursor](https://cursor.sh), and other agents that support the [Agent Skills](https://agentskills.io) standard.
 
 ## Real Examples
 
@@ -29,29 +29,44 @@ These were all created using this skill:
 Install from the [Agent Skills Directory](https://skills.sh):
 
 ```bash
-npx skills add joehu/apple-bento-grid
+npx skills add hubeiqiao/apple-bento-grid
 ```
 
 Or clone directly into your Claude Code skills directory:
 
 ```bash
-git clone https://github.com/joehu/apple-bento-grid.git ~/.claude/skills/apple-bento-grid
+git clone https://github.com/hubeiqiao/apple-bento-grid.git ~/.claude/skills/apple-bento-grid
 ```
 
 Or add it as a project skill in `.claude/skills/`.
 
 ## Usage
 
-In your AI coding agent, just describe what you want:
+In your AI coding agent, just describe what you want to visualize. You don't need to be specific — the skill figures out the best layout, theme, and card types for you.
 
+**Quick start:**
 ```
-Create a bento grid showing my startup metrics: $2.4M revenue, 12K users, 3 product phases
-```
-
-```
-Build an Apple-style dark theme dashboard card for my GitHub project stats
+Use /apple-bento-grid to visualize my project stats
 ```
 
+**Explore different use cases:**
+```
+Use /apple-bento-grid to visualize my startup's growth journey
+```
+```
+Use /apple-bento-grid to visualize my open source project achievements
+```
+```
+Use /apple-bento-grid to create a year-in-review card for my portfolio
+```
+```
+Use /apple-bento-grid to visualize our team's Q4 shipping velocity
+```
+
+**Or be specific when you know what you want:**
+```
+Create a dark theme bento grid with $2.4M revenue, 12K users, and a bar chart showing quarterly growth
+```
 ```
 Make a vertical social media card with 5 achievement stats and my company logo
 ```
